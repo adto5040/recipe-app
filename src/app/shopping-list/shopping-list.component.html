@@ -5,7 +5,10 @@
     <ul class="list-group">
       <a class="list-group-item" style="cursor: pointer"
       *ngFor="let ingredient of ingredients; let i = index"
-      (click)="onEditItem(i)">
+      (click)="onEditItem(i)"
+      [@listAnimation]=""
+      (@listAnimation.start)="animationStarted($event)"
+         (@listAnimation.done)="animationEnded($event)">
         {{ingredient.name}} ({{ingredient.amount}})
       </a>
     </ul>
