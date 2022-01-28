@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import {ReactiveFormsModule} from "@angular/forms";
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
 import {RecipesModule} from "./recipes/recipes.module";
@@ -18,7 +17,6 @@ import {SharedModule} from "./shared/shared.module";
   imports: [
     SharedModule,
     BrowserModule,
-    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     RecipesModule,
