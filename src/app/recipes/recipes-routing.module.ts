@@ -8,7 +8,7 @@ import {RecipeResolverService} from "./recipe-resolver.service";
 
 const routes: Routes = [
   {
-    path: 'recipes', component: RecipesComponent, children: [
+    path: '', component: RecipesComponent, children: [
       {path: '', component: RecipeEmptyComponent},
       {path: 'new', component: RecipeEditComponent},
       {path: ':id', component: RecipeDetailComponent, resolve: [RecipeResolverService]},
